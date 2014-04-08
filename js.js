@@ -16,7 +16,7 @@ var contactMe = "<h2>Contact Me</h2>" +
 var portfolio = "<h2>My Projects</h2>" +
                 "<div style=\"width:100%;\">" +
                   "<div style=\"display:inline-block; float:left; width:30%;\">" +
-                    "<a style=\"color:blue; text-align:left;\" href=\"https://github.com/jacobhaile/pictur/\">Pictur</a>" + 
+                    "<a style=\"color:blue; text-align:left;\" href=\"http://pictur.herokuapp.com/\">Pictur</a>" + 
                   "</div>" +
                   "<div style=\"display:inline-block; overflow:hidden; width:70%; text-align:left; line-height:150%;\">" +
                   "Social image sharing site with commenting, favoriting, and " + 

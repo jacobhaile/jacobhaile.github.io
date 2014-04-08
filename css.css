@@ -1,196 +1,88 @@
 html, body{
-    margin:0;
-    padding:0;
-    min-width: 1140px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    background-color:#F5F5F5;
+  min-width: 1140px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background-color:#F5F5F5;
 }
 
-ul.sections {
-    cursor:pointer;
-    
-}  
+ul.sections { cursor:pointer;}  
 
-h1, h2 {
-  font-weight:normal;
-  
-}
+h1, h2 { font-weight:normal; }
 
 #header {
   text-align:center;
   position:absolute;
   font-size:22px;
   width: 40%;
-  
+}
+
+#first, #second, #third {
+  width: 100px;
+  height: 100px;
+  display:inline-block;
+  position:absolute; 
 }
 
 #first {
-    width: 100px;
-    height: 100px;
-    background: url('http://themify.me/demo/themes/flat/files/2013/06/icon-portfolio.png') no-repeat;
+    background: url('./images/icon-portfolio.png') no-repeat;
     background-size: 95px 95px;
     background-position: center center;
-    display:inline-block;
-    left:10%;
-    position:absolute;
-    
+    left:9%;
   }
 
 #second {
-    width: 100px;
-    height: 100px;
-    background: url('http://www.clker.com/cliparts/a/4/1/d/1301963432622081819stick_figure%20(1)-hi.png') no-repeat;
+    background: url('./images/icon-man.png') no-repeat;
     background-size: 80px 80px;
     background-position: center center;
-    display:inline-block;
-    left:40%;
-    top:10%;
-    position:absolute;
-}
-
-.email {
-    vertical-align:middle;
-    font-size:18px;
-    
-}
-
-.email p {
-  vertical-align:middle;
-  bottom:200px;
-}
-
-a {
-    text-decoration: none;
-    color:black;
-}
-
-#nav-bar, #header, #content {
-    width: 40%;
-    left: 30%;
-    
-}
-
-#nav-bar {
-    height: 110px;
-    top:100px;
-    position:absolute;
-}
-#header {
-    height: 50px;
-    
-}
-
-#content {
-  position: absolute;
-    top:200px;
-    text-align:center;
-    line-height:250%;
-    font-size:19px;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: 300;
-    display:inline-block;
-    
+    left:39%;
 }
 
 #third {
-    width: 100px;
-    height: 100px;
-    background: #caa;
-    display:inline-block;
-    left:70%;
-    background:url('http://www.deburenuden.nl/wp-content/uploads/2012/10/iconmonstr-smartphone-4-icon-e1354225869556.png') no-repeat;
+    left:68%;
+    background:url('./images/icon-phone.png') no-repeat;
     background-size: 40px 75px;
     background-position: center center;
-    position:absolute;
-    
 }
 
-#footer-email {
-  border: 1px solid #D9D9D9;
-    cursor:pointer;
-    width: 100%;
-    height: 50px;
-    position:absolute;
-    bottom:0px;
-    text-align:center;
-    vertical-align:middle;
+a { text-decoration: none; color:#1D2073;}
+
+#nav-bar, #header, #content { width: 40%; left: 30%; }
+
+#nav-bar { height: 110px; top:100px; position:absolute; }
+
+#header { height: 50px; }
+
+#content {
+  position: absolute;
+  top:200px;
+  text-align:center;
+  line-height:250%;
+  font-size:19px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  display:inline-block;
 }
-
-
-
-
-
-
 
 @media screen and (max-width: 960px) {
-	#main, #footer {
-		width: 758px;
-	}
-	
-	#header, #nav-bar, #content {
-		width: 403px;
-	}
+	#main, #footer { width: 758px; }	
+	#header, #nav-bar, #content { width: 403px; }
 }
 
 @media screen and (max-width: 768px) {
-	#content, .email {
-    font-size:16px;
-	}
-  
-  #first {
-    background-size: 75px 75px;
-  }
-  
-  #second {
-    background-size: 65px 65px;
-  }
-  
-  #third {
-    background-size: 25px 50px;
-  }
-  
-  #header, #nav-bar, #content {
-		width: 324px;
-  }
-  
-  #nav-bar {
-    left:28%;
-  }
-  
-  #header {
-    font-size:16px;
-  }
-
+	#content { font-size:16px; }
+  #first { background-size: 75px 75px; }
+  #second { background-size: 65px 65px; }
+  #third { background-size: 25px 50px; }
+  #header, #nav-bar, #content { width: 324px; }
+  #nav-bar { left:28%; }
+  #header { font-size:16px;}
 }
 
 @media screen and (max-width: 524px) {
-	#content, {
-    font-size:14px;
-	}
-  
-  #first {
-    background-size: 50px 50px;
-  }
-  
-  #second {
-    background-size: 40px 40px;
-  }
-  
-  #third {
-    background-size: 15px 30px;
-  }
-  
-  #header, #nav-bar, #content {
-		width: 50%;
-  }
-  
-  #nav-bar {
-    left:25%;
-  }
-  
-  #header {
-    font-size:12px;
-  }
-  
-
+	#content { font-size:14px;}
+  #first { background-size: 50px 50px;}
+  #second { background-size: 40px 40px;}
+  #third { background-size: 15px 30px;}
+  #header, #nav-bar, #content { width: 50%; }  
+  #nav-bar { left:25%;}
+  #header { font-size:12px;}
 }

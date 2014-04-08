@@ -11,7 +11,8 @@ var aboutMe = "<h2>About Me</h2>" +
 var contactMe = "<h2>Contact Me</h2>" + 
                 "<a href=\"mailto:jacobhaile@gmail.com\">jacobhaile@gmail.com</a><br>" + 
                 "<a href=\"http://www.linkedin.com/in/jacobhaile\">LinkedIn</a><br>" + 
-                "<a href=\"http://www.github.com/jacobhaile\">Github</a>";
+                "<a href=\"http://www.github.com/jacobhaile\">Github</a><br>" +
+                "<a href=\"https://www.dropbox.com/s/svkgvmll572xxev/Jacob_Haile_Resume.pdf\">My Resume</a>";
 var portfolio = "<h2>My Projects</h2>" +
                 "<div style=\"width:100%;\">" +
                   "<div style=\"display:inline-block; float:left; width:30%;\">" +
@@ -63,9 +64,9 @@ function slide(current) {
   others = $('ul.sections li:not(.current)');
   others.fadeOut('fast').promise().done(function() {
     $('ul.sections li').html(sections.eq(current));
-    sections.eq(current).animate({'left': '40%'}, 300, function() {
-      $('.sections').prepend(others.eq(0).fadeIn('slow').css({"display":"inline-block", "left":"10%"}));
-      $('.sections').append(others.eq(1).fadeIn('slow').css({"display":"inline-block", "left":"70%"}));
+    sections.eq(current).animate({'left': '39%'}, 300, function() {
+      $('.sections').prepend(others.eq(0).fadeIn('slow').css({"display":"inline-block", "left":"9%"}));
+      $('.sections').append(others.eq(1).fadeIn('slow').css({"display":"inline-block", "left":"68%"}));
     }); 
     $('#content').fadeOut('fast', function() {
       fillContent();

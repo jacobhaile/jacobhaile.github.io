@@ -5,7 +5,7 @@ var sections = $('ul.sections li');
 var current;
 var others;
 var aboutMe = "<h2>About Me</h2>" +
-              "I'm Jacob Haile, a junior web developer for hire. I like pizza, " + 
+              "I'm Jacob Haile, a web developer for hire. I like pizza, " + 
               "but I love coding. Some of the languages that take up most of my time " +
               "are Ruby on Rails, Javascript, HTML/CSS/Jquery, and Backbone.js.";
 var contactMe = "<h2>Contact Me</h2>" + 

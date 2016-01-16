@@ -356,23 +356,8 @@ td,
 th {
   padding: 0; }
 
-html, body {
-  min-width: 1140px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background-color: #F5F5F5; }
-
-ul.sections {
-  cursor: pointer; }
-
-h1, h2 {
-  font-weight: normal; }
-
 #main h1,
 #main #contact-me {
   text-align: center; }
-
-a {
-  text-decoration: none;
-  color: #1D2073; }
 
 /*# sourceMappingURL=css.css.map */

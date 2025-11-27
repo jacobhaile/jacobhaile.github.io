@@ -47,9 +47,8 @@ The site is automatically deployed to GitHub Pages on every push to the `main` b
 
 The deployment workflow:
 1. Builds the Next.js static export
-2. Copies the `CNAME` file for custom domain
-3. Adds `.nojekyll` to prevent Jekyll processing
-4. Deploys to GitHub Pages
+2. Adds `.nojekyll` to prevent Jekyll processing
+3. Deploys to GitHub Pages
 
 ## 📄 Project Structure
 

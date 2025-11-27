@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         offwhite: '#FAFAF9',
-        navy: '#1E3A5F',
+        navy: '#111c45',
         orange: '#D97706',
       },
       fontFamily: {

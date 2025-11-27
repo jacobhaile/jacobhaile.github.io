@@ -40,7 +40,7 @@ const jobs: Job[] = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 px-4 bg-navy/5 dark:bg-offwhite/5">
+    <section id="experience" className="py-20">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-normal mb-12 pb-2 border-b-2 border-navy dark:border-offwhite">
           experience
@@ -48,17 +48,17 @@ export default function Experience() {
         <div className="space-y-12">
           {jobs.map((job, index) => (
             <div key={index} className="space-y-3">
-              <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
-                <h3 className="text-xl md:text-2xl font-semibold">
-                  {job.title}
-                </h3>
+              <h3 className="text-xl md:text-2xl font-semibold text-right">
+                {job.title}
+              </h3>
+              <div className="flex items-baseline justify-between">
+                <h4 className="text-lg md:text-xl font-medium text-orange">
+                  {job.company}
+                </h4>
                 <span className="text-sm md:text-base text-navy/60 dark:text-offwhite/60">
                   {job.period}
                 </span>
               </div>
-              <h4 className="text-lg md:text-xl font-medium text-orange">
-                {job.company}
-              </h4>
               <p className="text-base md:text-lg leading-relaxed">
                 {job.summary}
               </p>

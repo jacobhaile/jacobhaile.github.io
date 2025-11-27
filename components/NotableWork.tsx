@@ -15,7 +15,7 @@ const projects = [
 
 export default function NotableWork() {
   return (
-    <section id="notable-work" className="py-20 px-4 bg-navy/5 dark:bg-offwhite/5">
+    <section id="notable-work" className="py-20">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-normal mb-12 pb-2 border-b-2 border-navy dark:border-offwhite">
           notable work

@@ -52,12 +52,12 @@ export default function Header() {
 
   if (!mounted) {
     return (
-      <header className="fixed top-0 left-0 right-0 z-50 bg-offwhite/95 backdrop-blur-sm border-b border-navy/10 transition-all duration-300 h-20 lg:sticky lg:h-screen lg:w-80 lg:border-b-0 lg:border-r">
-        <div className="container mx-auto px-6 h-full flex items-center justify-between lg:flex-col lg:justify-start lg:py-12">
-          <div>
+      <header className="fixed top-0 left-0 right-0 z-50 bg-offwhite/95 backdrop-blur-sm border-b border-navy/10 transition-all duration-300 h-20 lg:sticky lg:h-screen lg:w-96 xl:w-[32rem] lg:border-b-0 lg:border-r">
+        <div className="h-full flex items-center justify-between px-6 lg:flex-col lg:items-end lg:justify-start lg:py-20 lg:px-12">
+          <div className="lg:text-right">
             <h1 className="font-bold text-3xl lg:text-4xl">Jacob Haile</h1>
             <p className="text-sm text-navy/70 dark:text-offwhite/70 lg:text-base lg:mt-1">Staff Engineer</p>
-            <div className="hidden lg:flex gap-3 mt-4">
+            <div className="hidden lg:flex gap-3 mt-4 lg:justify-end">
               <a href="#" className="w-10 h-10 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-xl hover:bg-orange/20 transition-colors">
                 🔗
               </a>
@@ -93,18 +93,14 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-offwhite/95 dark:bg-navy/95 backdrop-blur-sm border-b border-navy/10 dark:border-offwhite/10 transition-all duration-300
-        lg:sticky lg:h-screen lg:w-80 lg:border-b-0 lg:border-r lg:dark:border-offwhite/10
-        ${isScrolled ? 'h-14 lg:h-screen' : 'h-20 lg:h-screen'}`}
+      className="fixed top-0 left-0 right-0 z-50 bg-offwhite/95 dark:bg-navy/95 backdrop-blur-sm border-b border-navy/10 dark:border-offwhite/10 transition-all duration-300 h-20
+        lg:sticky lg:h-screen lg:w-96 xl:w-[32rem] lg:border-b-0 lg:border-r lg:dark:border-offwhite/10"
     >
-      <div className={`container mx-auto px-6 h-full flex items-center justify-between transition-all duration-300
-        lg:flex-col lg:items-start lg:justify-between lg:py-12`}>
+      <div className={`h-full flex items-center justify-between px-6 transition-all duration-300
+        lg:flex-col lg:items-end lg:justify-between lg:py-20 lg:px-12`}>
         {/* Name and social icons */}
-        <div>
-          <h1
-            className={`font-bold transition-all duration-300 lg:text-4xl
-              ${isScrolled ? 'text-2xl' : 'text-3xl'}`}
-          >
+        <div className="lg:text-right">
+          <h1 className="font-bold text-3xl lg:text-4xl transition-all duration-300">
             Jacob Haile
           </h1>
           <p className="text-sm text-navy/70 dark:text-offwhite/70 lg:text-base lg:mt-1">
@@ -112,7 +108,7 @@ export default function Header() {
           </p>
           
           {/* Desktop social icons - below subtitle */}
-          <div className="hidden lg:flex gap-3 mt-4">
+          <div className="hidden lg:flex gap-3 mt-4 lg:justify-end">
             <a href="#" className="w-10 h-10 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-xl hover:bg-orange/20 transition-colors">
               🔗
             </a>
@@ -145,7 +141,7 @@ export default function Header() {
         </div>
 
         {/* Desktop navigation */}
-        <nav className="hidden lg:block">
+        <nav className="hidden lg:block lg:text-right">
           <ul className="space-y-4">
             <li>
               <a 

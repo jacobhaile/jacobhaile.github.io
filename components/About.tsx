@@ -9,7 +9,7 @@ export default function About() {
           I am a software engineer with 10+ years of experience building performant, scalable applications. 
           With deep experience across stacks, team coordination and collaboration, and mentoring engineers, 
           web development acts as both my hobby and profession. With a proven track record aligning development 
-          with product outcomes, I'm at home in complex product environments, where my values emphasize clean 
+          with product outcomes, I&apos;m at home in complex product environments, where my values emphasize clean 
           design, test coverage, and developer experience.
         </p>
       </div>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG Image Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a1a;
+            padding: 40px;
+        }
+        
+        .og-container {
+            width: 1200px;
+            height: 630px;
+            display: flex;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .left-half {
+            flex: 1;
+            background: #FAFAF9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            padding-right: 40px;
+            color: #111c45;
+        }
+        
+        .right-half {
+            flex: 1;
+            background: #f5f5f4; /* stone-100 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 40px;
+            color: #111c45;
+        }
+        
+        .name {
+            font-size: 120px;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: -0.02em;
+        }
+        
+        .title {
+            font-size: 48px;
+            font-weight: 700;
+            color: #D97706;
+            margin-top: 20px;
+            letter-spacing: -0.01em;
+        }
+    </style>
+</head>
+<body>
+    <div class="og-container">
+        <div class="left-half">
+            <div class="name">Jacob</div>
+            <div class="title">Web</div>
+        </div>
+        <div class="right-half">
+            <div class="name">Haile</div>
+            <div class="title">Dev</div>
+        </div>
+    </div>
+</body>
+</html>
+

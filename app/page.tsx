@@ -1,7 +1,7 @@
-import Header from "@/components/Header";
 import About from "@/components/About";
-import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import Experience from "@/components/Experience";
+import Header from "@/components/Header";
 import NotableWork from "@/components/NotableWork";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <Header />
       
       {/* Right content area */}
-      <main className="lg:flex-1 lg:overflow-y-auto pt-20 lg:pt-0 px-6 lg:px-12 xl:px-20">
+      <main className="lg:flex-1 lg:overflow-y-auto pt-24 lg:pt-0 px-6 lg:px-12 xl:px-20 bg-stone-100 dark:bg-[#0a1428]">
         <About />
         <Experience />
         <Education />

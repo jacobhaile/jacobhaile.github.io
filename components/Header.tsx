@@ -53,12 +53,12 @@ export default function Header() {
 
   if (!mounted) {
     return (
-      <header className="fixed top-0 left-0 right-0 z-50 bg-offwhite/95 backdrop-blur-sm border-b border-navy/10 transition-all duration-300 h-20 lg:sticky lg:h-screen lg:w-96 xl:w-[32rem] lg:border-b-0 lg:border-r">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-offwhite dark:bg-navy backdrop-blur-sm transition-all duration-300 h-24 lg:sticky lg:h-screen lg:w-96 xl:w-[32rem]">
         <div className="h-full flex items-center justify-between px-6 lg:flex-col lg:items-end lg:justify-start lg:py-20 lg:px-12">
           <div className="flex items-center justify-between lg:block w-full">
             <div className="lg:text-right">
-              <h1 className="font-bold text-3xl lg:text-4xl">Jacob Haile</h1>
-              <p className="text-sm text-navy/70 dark:text-offwhite/70 lg:text-base lg:mt-1">Staff Engineer</p>
+              <h1 className="font-bold text-3xl lg:text-5xl">Jacob Haile</h1>
+              <p className="text-sm text-navy/70 dark:text-offwhite/70 lg:text-lg lg:mt-1">Web Developer</p>
             </div>
             
             <div className="flex gap-3 lg:mt-4 lg:justify-end">
@@ -83,20 +83,20 @@ export default function Header() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 bg-offwhite/95 dark:bg-navy/95 backdrop-blur-sm border-b border-navy/10 dark:border-offwhite/10 transition-all duration-300 h-20
-        lg:sticky lg:h-screen lg:w-96 xl:w-[32rem] lg:border-b-0 lg:border-r lg:dark:border-offwhite/10"
+      className="fixed top-0 left-0 right-0 z-50 bg-offwhite dark:bg-navy backdrop-blur-sm transition-all duration-300 h-24
+        lg:sticky lg:h-screen lg:w-96 xl:w-[32rem]"
     >
       <div className={`h-full flex items-center justify-between px-6 transition-all duration-300
         lg:flex-col lg:items-end lg:justify-between lg:py-20 lg:px-12`}>
         {/* Name and social icons */}
         <div className="flex items-center justify-between lg:block w-full">
           <div className="lg:text-right">
-            <h1 className="font-bold text-3xl lg:text-4xl transition-all duration-300">
-              Jacob Haile
-            </h1>
-            <p className="text-sm text-navy/70 dark:text-offwhite/70 lg:text-base lg:mt-1">
-              Staff Engineer
-            </p>
+          <h1 className="font-bold text-3xl lg:text-5xl transition-all duration-300">
+            Jacob Haile
+          </h1>
+            <p className="text-sm text-navy/70 dark:text-offwhite/70 lg:text-lg lg:mt-1">
+            Web Developer
+          </p>
           </div>
           
           {/* Social icons */}

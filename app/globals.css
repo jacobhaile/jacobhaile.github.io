@@ -7,6 +7,6 @@ html {
 }
 
 body {
-  @apply bg-offwhite text-navy dark:bg-navy dark:text-offwhite;
+  @apply bg-stone-100 text-navy dark:bg-[#0a1428] dark:text-offwhite;
 }
 

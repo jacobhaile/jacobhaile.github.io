@@ -15,9 +15,6 @@ export default function Education() {
           <p className="text-base md:text-lg">
             University of California, San Diego
           </p>
-          <p className="text-sm md:text-base text-navy/60 dark:text-offwhite/60">
-            June 2012
-          </p>
         </div>
       </div>
     </section>

@@ -14,11 +14,12 @@ A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS, sho
 ## ✨ Features
 
 - **Mobile-first responsive design**
-- **Dark mode support** with system preference detection and localStorage persistence
-- **Shrinking sticky header** with smooth scroll behavior
+- **Dark mode support** with system preference detection
+- **Split-screen layout** on desktop with sidebar navigation
 - **Static site generation** optimized for GitHub Pages
 - **Accessible UI** with semantic HTML
 - **Performance optimized** with Next.js SSG
+- **Company logos** in experience section
 
 ## 🛠️ Development
 
@@ -58,13 +59,12 @@ The deployment workflow:
 │   ├── page.tsx         # Main page
 │   └── globals.css      # Global styles
 ├── components/          # React components
-│   ├── Header.tsx       # Sticky header with theme toggle
-│   ├── Hero.tsx         # Hero section
+│   ├── Header.tsx       # Sidebar with navigation and social icons
 │   ├── About.tsx        # About section
-│   ├── Experience.tsx   # Work experience
+│   ├── Experience.tsx   # Work experience with company logos
 │   ├── Education.tsx    # Education section
 │   ├── NotableWork.tsx  # Projects showcase
-│   ├── Contact.tsx      # Contact information
+│   ├── Icons.tsx        # Social media icon components
 │   └── ThemeProvider.tsx # Dark mode context
 ├── .github/workflows/   # GitHub Actions
 └── public/              # Static assets
@@ -72,15 +72,16 @@ The deployment workflow:
 
 ## 🎨 Design
 
-The design follows a clean, professional aesthetic inspired by my resume:
+The design follows a clean, professional aesthetic:
 
 - **Colors:**
-  - Light mode: Off-white background (#FAFAF9), Navy text (#1E3A5F)
-  - Dark mode: Navy background, Off-white text
-  - Accent: Dark orange (#D97706)
+  - Light mode: Off-white background (#FAFAF9), Dark navy text (#111c45)
+  - Dark mode: Dark navy background, Off-white text
+  - Accent: Orange (#D97706)
 - **Typography:** Inter font family
-- **Layout:** Single-page with smooth scrolling sections
-- **Headers:** Lowercase with underline (matching resume style)
+- **Layout:** Split-screen on desktop (sidebar + content), single column on mobile
+- **Headers:** Lowercase with underline
+- **Contact:** GitHub, LinkedIn, and Email icons in sidebar
 
 ## 📝 License
 

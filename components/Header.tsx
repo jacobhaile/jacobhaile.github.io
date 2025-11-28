@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { EmailIcon, GitHubIcon, LinkedInIcon, PhoneIcon } from './Icons';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,7 +22,7 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    const sections = ['about', 'experience', 'education', 'notable-work', 'contact'];
+    const sections = ['about', 'experience', 'education', 'notable-work'];
     
     const observers = sections.map((sectionId) => {
       const element = document.getElementById(sectionId);
@@ -54,37 +55,26 @@ export default function Header() {
     return (
       <header className="fixed top-0 left-0 right-0 z-50 bg-offwhite/95 backdrop-blur-sm border-b border-navy/10 transition-all duration-300 h-20 lg:sticky lg:h-screen lg:w-96 xl:w-[32rem] lg:border-b-0 lg:border-r">
         <div className="h-full flex items-center justify-between px-6 lg:flex-col lg:items-end lg:justify-start lg:py-20 lg:px-12">
-          <div className="lg:text-right">
-            <h1 className="font-bold text-3xl lg:text-4xl">Jacob Haile</h1>
-            <p className="text-sm text-navy/70 dark:text-offwhite/70 lg:text-base lg:mt-1">Staff Engineer</p>
-            <div className="hidden lg:flex gap-3 mt-4 lg:justify-end">
-              <a href="#" className="w-10 h-10 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-xl hover:bg-orange/20 transition-colors">
-                🔗
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-xl hover:bg-orange/20 transition-colors">
-                💼
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-xl hover:bg-orange/20 transition-colors">
-                📧
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-xl hover:bg-orange/20 transition-colors">
-                📱
-              </a>
+          <div className="flex items-center justify-between lg:block w-full">
+            <div className="lg:text-right">
+              <h1 className="font-bold text-3xl lg:text-4xl">Jacob Haile</h1>
+              <p className="text-sm text-navy/70 dark:text-offwhite/70 lg:text-base lg:mt-1">Staff Engineer</p>
             </div>
-          </div>
-          <div className="flex lg:hidden gap-3">
-            <a href="#" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-lg hover:bg-orange/20 transition-colors">
-              🔗
+            
+            <div className="flex gap-3 lg:mt-4 lg:justify-end">
+            <a href="https://github.com/jacobhaile" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center hover:bg-orange/20 transition-colors" aria-label="GitHub">
+              <GitHubIcon className="w-4 h-4" />
             </a>
-            <a href="#" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-lg hover:bg-orange/20 transition-colors">
-              💼
+            <a href="https://linkedin.com/in/jacobhaile" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center hover:bg-orange/20 transition-colors" aria-label="LinkedIn">
+              <LinkedInIcon className="w-4 h-4" />
             </a>
-            <a href="#" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-lg hover:bg-orange/20 transition-colors">
-              📧
+            <a href="mailto:jacobhaile@gmail.com" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center hover:bg-orange/20 transition-colors" aria-label="Email">
+              <EmailIcon className="w-4 h-4" />
             </a>
-            <a href="#" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-lg hover:bg-orange/20 transition-colors">
-              📱
+            <a href="tel:+13234232594" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center hover:bg-orange/20 transition-colors" aria-label="Phone">
+              <PhoneIcon className="w-4 h-4" />
             </a>
+            </div>
           </div>
         </div>
       </header>
@@ -99,45 +89,28 @@ export default function Header() {
       <div className={`h-full flex items-center justify-between px-6 transition-all duration-300
         lg:flex-col lg:items-end lg:justify-between lg:py-20 lg:px-12`}>
         {/* Name and social icons */}
-        <div className="lg:text-right">
-          <h1 className="font-bold text-3xl lg:text-4xl transition-all duration-300">
-            Jacob Haile
-          </h1>
-          <p className="text-sm text-navy/70 dark:text-offwhite/70 lg:text-base lg:mt-1">
-            Staff Engineer
-          </p>
-          
-          {/* Desktop social icons - below subtitle */}
-          <div className="hidden lg:flex gap-3 mt-4 lg:justify-end">
-            <a href="#" className="w-10 h-10 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-xl hover:bg-orange/20 transition-colors">
-              🔗
-            </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-xl hover:bg-orange/20 transition-colors">
-              💼
-            </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-xl hover:bg-orange/20 transition-colors">
-              📧
-            </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-xl hover:bg-orange/20 transition-colors">
-              📱
-            </a>
+        <div className="flex items-center justify-between lg:block w-full">
+          <div className="lg:text-right">
+            <h1 className="font-bold text-3xl lg:text-4xl transition-all duration-300">
+              Jacob Haile
+            </h1>
+            <p className="text-sm text-navy/70 dark:text-offwhite/70 lg:text-base lg:mt-1">
+              Staff Engineer
+            </p>
           </div>
-        </div>
-        
-        {/* Mobile social icons - right aligned */}
-        <div className="flex lg:hidden gap-3">
-          <a href="#" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-lg hover:bg-orange/20 transition-colors">
-            🔗
+          
+          {/* Social icons */}
+        <div className="flex gap-3 lg:mt-4 lg:justify-end">
+          <a href="mailto:jacobhaile@gmail.com" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center hover:bg-orange/20 transition-colors" aria-label="Email">
+            <EmailIcon className="w-4 h-4" />
           </a>
-          <a href="#" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-lg hover:bg-orange/20 transition-colors">
-            💼
+          <a href="https://linkedin.com/in/jacobhaile" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center hover:bg-orange/20 transition-colors" aria-label="LinkedIn">
+            <LinkedInIcon className="w-4 h-4" />
           </a>
-          <a href="#" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-lg hover:bg-orange/20 transition-colors">
-            📧
+          <a href="https://github.com/jacobhaile" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center hover:bg-orange/20 transition-colors" aria-label="GitHub">
+            <GitHubIcon className="w-4 h-4" />
           </a>
-          <a href="#" className="w-9 h-9 rounded-full bg-navy/10 dark:bg-offwhite/10 flex items-center justify-center text-lg hover:bg-orange/20 transition-colors">
-            📱
-          </a>
+          </div>
         </div>
 
         {/* Desktop navigation */}
@@ -199,21 +172,6 @@ export default function Header() {
                 <span 
                   className={`absolute left-0 bottom-0 h-0.5 bg-orange transition-all duration-300 ${
                     activeSection === 'notable-work' ? 'w-full' : 'w-0'
-                  }`}
-                />
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#contact" 
-                className={`text-lg hover:text-orange transition-all duration-200 inline-block relative
-                  ${activeSection === 'contact' ? 'text-orange' : ''}
-                `}
-              >
-                contact
-                <span 
-                  className={`absolute left-0 bottom-0 h-0.5 bg-orange transition-all duration-300 ${
-                    activeSection === 'contact' ? 'w-full' : 'w-0'
                   }`}
                 />
               </a>
